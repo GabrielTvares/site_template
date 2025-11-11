@@ -1,10 +1,10 @@
-# 🚀 Navi BI - Plataforma de Business Intelligence
+# 🚀 Template TurbinEduca - React + TypeScript + TailwindCSS
 
-## 📋 Sobre o Projeto
+## 📋 Sobre o Template
 
-Landing page moderna e responsiva desenvolvida para apresentar a solução de Business Intelligence do Navi Bi. O projeto utiliza tecnologias de ponta para oferecer uma experiência de usuário excepcional.
+Template moderno e responsivo para criação de landing pages e sites institucionais. Desenvolvido com as melhores práticas e tecnologias atuais do mercado.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Incluídas
 
 - **React 18+** - Biblioteca JavaScript para construção de interfaces
 - **TypeScript** - Superset do JavaScript com tipagem estática
@@ -13,29 +13,26 @@ Landing page moderna e responsiva desenvolvida para apresentar a solução de Bu
 - **Shadcn/ui** - Componentes React reutilizáveis e acessíveis
 - **Lucide React** - Biblioteca de ícones modernos
 - **React Router** - Navegação entre páginas
-- **Firebase Hosting** - Hospedagem em produção
+- **Framer Motion** - Animações fluidas
 
 ## 📁 Estrutura do Projeto
 
 ```
-navi bi 2.0/
+template/
 ├── src/
 │   ├── components/       # Componentes reutilizáveis
 │   │   ├── ui/          # Componentes base (Shadcn)
 │   │   ├── Header.tsx   # Cabeçalho com navegação
 │   │   ├── Footer.tsx   # Rodapé
 │   │   ├── Hero.tsx     # Seção hero
-│   │   ├── ValueCard.tsx # Cards de valores
 │   │   └── ...
 │   ├── pages/           # Páginas da aplicação
 │   │   ├── Index.tsx    # Página inicial
-│   │   ├── QuemSomos.tsx # Página sobre
 │   │   └── NotFound.tsx # Página 404
 │   ├── hooks/           # Custom hooks
 │   ├── lib/             # Utilitários
 │   └── assets/          # Imagens e recursos
-├── dist/                # Build de produção
-├── firebase.json        # Configuração Firebase
+├── public/              # Arquivos públicos
 └── package.json         # Dependências do projeto
 ```
 
@@ -45,13 +42,12 @@ navi bi 2.0/
 
 - Node.js 18+ instalado
 - npm ou yarn
-- Conta no Firebase (para deploy)
 
 ### 1️⃣ Clone o Repositório
 
 ```bash
 git clone https://github.com/GabrielTvares/navibi.git
-cd "navi bi 2.0"
+cd turbineduca-template
 ```
 
 ### 2️⃣ Instale as Dependências
@@ -66,67 +62,7 @@ npm install
 npm run dev
 ```
 
-O projeto estará disponível em `http://localhost:8080`
-
-## 🚀 Deploy no Firebase Hosting
-
-### 1. Instalar o Firebase CLI (caso ainda não tenha)
-
-```bash
-npm install -g firebase-tools
-```
-
-### 2. Fazer login no Firebase
-
-```bash
-firebase login
-```
-
-### 3. Inicializar o Firebase Hosting dentro do seu projeto
-
-```bash
-firebase init
-```
-
-**3.1. Selecione o tipo de serviço:**
-- ✅ Hosting: configure files for Firebase Hosting
-
-**3.2. Seleção de projeto:**
-- ✅ Use an existing project
-- Selecione: `navibi-178bf`
-
-**3.3. Public directory:**
-Quando perguntar "What do you want to use as your public directory?", digite:
-```
-dist
-```
-
-**3.4. Configure as a single-page app:**
-Configure as a single-page app (rewrite all urls to /index.html)? (y/N)
-```
-y
-```
-
-### 4. Gere o build do projeto
-
-```bash
-npm run build
-```
-
-### 5. Faça o deploy
-
-```bash
-firebase deploy --only hosting
-```
-
-Ou para deploy completo:
-```bash
-firebase deploy
-```
-
-## 🌐 URL de Produção
-
-**Site oficial:** [navibi.ai];[https://navibi-site.web.app].
+O projeto estará disponível em `http://localhost:5173`
 
 ## 📦 Scripts Disponíveis
 
@@ -137,71 +73,67 @@ npm run preview      # Preview do build localmente
 npm run lint         # Executa o linter
 ```
 
-## 🎨 Características do Projeto
+## 🎨 Características do Template
 
-### ✨ Funcionalidades
+### ✨ Funcionalidades Incluídas
 
 - ✅ Design responsivo (mobile-first)
-- ✅ Animações suaves e parallax
+- ✅ Animações suaves com Framer Motion
 - ✅ Navegação fluida entre páginas
 - ✅ Cards informativos com hover effects
-- ✅ Formulário de contato integrado
+- ✅ Formulário de contato
 - ✅ Botão WhatsApp flutuante
-- ✅ Menu hamburguer mobile otimizado
+- ✅ Menu hamburguer mobile
+- ✅ Sistema de Cookies (LGPD)
 - ✅ SEO otimizado
-- ✅ Performance otimizada (PWA-ready)
+- ✅ Performance otimizada
 
-### 🎯 Seções Principais
+### 🎯 Seções de Exemplo
 
-1. **Home** - Apresentação e call-to-action
-2. **Quem Somos** - História e valores da empresa
-3. **Pilares** - Propósito, Missão e Visão
-4. **TURBINE** - 7 valores fundamentais (T-U-R-B-I-N-E)
-5. **Contato** - Formulário e informações
+1. **Home** - Página inicial com Hero
+2. **Quem Somos** - Página institucional
+3. **Contato** - Formulário de contato
+4. **404** - Página de erro personalizada
 
-## 🔧 Configurações de Cache (Firebase)
+## 👥 Componentes Disponíveis
 
-O projeto utiliza cache agressivo para otimizar performance:
+### Shadcn/ui Components
+- Buttons, Cards, Dialogs
+- Forms, Inputs, Selects
+- Accordions, Tabs, Tooltips
+- Toast notifications
+- E muito mais...
 
-- **Imagens/Fontes:** Cache de 1 ano (immutable)
-- **JS/CSS:** Cache de 1 ano (immutable)
-- **JSON/XML:** Cache de 1 hora
-- **index.html:** Sempre revalidado (max-age=0)
+### Custom Components
+- **Header** - Menu responsivo com navegação
+- **Footer** - Rodapé com informações
+- **Hero** - Seção hero com animações
+- **ValueCard** - Cards customizáveis
+- **WhatsAppButton** - Botão flutuante
+- **CookieBanner** - Banner de cookies (LGPD)
 
-## 👥 Componentes Principais
+## 🎨 Personalização
 
-### ValueCard
-Cards customizáveis com dois tamanhos:
-- **Compact** (330px altura) - Para Pilares (Propósito, Missão, Visão)
-- **Full** (523px altura) - Para seção TURBINE (T, U, R, B, I, N, E)
-- **Largura:** 280px (padrão para todos)
+### Cores (tailwind.config.ts)
 
-### Header
-Menu responsivo com:
-- Links de navegação
-- Menu hamburguer mobile (z-index otimizado)
-- Active state visual
-- Scroll suave para seções
+```typescript
+colors: {
+  'petrol-dark': '#012739',
+  'gold': '#FFD700',
+  // Adicione suas cores aqui
+}
+```
 
-### Hero
-Seção inicial com:
-- Background parallax
-- Partículas douradas animadas
-- Call-to-action destacado
-- Gradientes personalizados
+### Componentes
 
-### Footer
-Rodapé com:
-- Logo da empresa
-- Links de redes sociais (LinkedIn, Instagram)
-- Copyright e informações
+Todos os componentes estão em `src/components/` e podem ser facilmente customizados.
 
 ## 🐛 Troubleshooting
 
 ### Limpar cache do Vite
 
 ```bash
-rm -rf node_modules/.vite && rm -rf .vite && rm -rf dist && rm -rf .cache
+rm -rf node_modules/.vite && rm -rf dist
 ```
 
 ### Reinstalar dependências
@@ -211,74 +143,20 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Erro de build
-
-```bash
-npm run build -- --mode production
-```
-
-### Verificar erros de TypeScript
-
-```bash
-npm run lint
-```
-
-## 🎨 Paleta de Cores
-
-- **Petrol Dark:** `#012739` - Cor principal de fundo
-- **Gold:** Dourado - Destaques e CTAs
-- **White:** Branco - Textos principais
-- **Gradientes:** Transições suaves entre petrol e gold
-
-## 📱 Responsividade
-
-### Breakpoints TailwindCSS:
-- **sm:** 640px
-- **md:** 768px
-- **lg:** 1024px
-- **xl:** 1280px
-- **2xl:** 1536px
-
-## 🔒 Headers de Segurança
-
-O projeto implementa headers de segurança via Firebase Hosting:
-
-- `X-Content-Type-Options: nosniff`
-- `X-Frame-Options: DENY`
-- `X-XSS-Protection: 1; mode=block`
-- `Referrer-Policy: strict-origin-when-cross-origin`
-
-## 📈 Performance
-
-### Otimizações Implementadas:
-
-- ✅ Lazy loading de imagens
-- ✅ Code splitting automático (Vite)
-- ✅ Minificação de JS/CSS
-- ✅ Compressão gzip no Firebase
-- ✅ Cache agressivo de assets
-- ✅ Fontes otimizadas
-- ✅ Imagens com dimensões fixas
-
-### Métricas:
-
-- **Build time:** ~6-7 segundos
-- **Bundle size:** ~475KB (JS) + 73KB (CSS)
-- **Gzip:** ~150KB (JS) + 12.5KB (CSS)
-
 ## 📝 Licença
 
-Projeto proprietário © 2025 Navi BI
+MIT License - Livre para uso comercial e pessoal
 
-## 👨‍💻 Desenvolvido por
+## 🚀 Próximos Passos
 
-**Maycon Pires** - Fundador do Navi BI
-**Gabriel Tavares** - Desenvolvedor no Navi BI
+1. Personalize as cores em `tailwind.config.ts`
+2. Substitua as imagens em `src/assets/`
+3. Atualize os textos e conteúdos
+4. Configure suas redes sociais no Footer
+5. Adicione suas páginas personalizadas
+6. Configure o deploy na sua plataforma preferida (Vercel, Netlify, etc.)
 
 ---
 
-**Status do Projeto:** ✅ Em Produção
-
-**Última atualização:** 23 de outubro de 2025
-
-**Repositório:** [github.com/GabrielTvares/navibi](https://github.com/GabrielTvares/navibi)
+**Template desenvolvido por:** TurbinEduca
+**Última atualização:** Novembro de 2025

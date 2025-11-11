@@ -1,13 +1,11 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "turbineduca-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node update-preload.cjs",
-    "build:dev": "vite build --mode development",
-    "build:only": "vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

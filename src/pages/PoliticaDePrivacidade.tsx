@@ -358,8 +358,8 @@ const PoliticaDePrivacidade = () => {
                       <Mail className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-white">E-mail</p>
-                        <a href="mailto:contato@navibi.com.br" className="text-gold hover:underline">
-                          contato@navibi.ai
+                        <a href="mailto:contato@suaempresa.com.br" className="text-gold hover:underline">
+                          contato@suaempresa.com.br
                         </a>
                       </div>
                     </div>

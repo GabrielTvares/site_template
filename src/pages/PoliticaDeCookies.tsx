@@ -374,9 +374,9 @@ const PoliticaDeCookies = () => {
               <Card className="border-gold/30 bg-gold/5">
                 <CardContent className="pt-6">
                   <div className="space-y-2 text-foreground/90">
-                    <p><strong>Email:</strong> contato@navibi.com.br</p>
-                    {/* <p><strong>WhatsApp:</strong> (32) 98853-9406</p> */}
-                    <p><strong>Endereço:</strong> Juiz de Fora - MG</p>
+                    <p><strong>Email:</strong> contato@suaempresa.com.br</p>
+                    <p><strong>WhatsApp:</strong> (XX) XXXXX-XXXX</p>
+                    <p><strong>Endereço:</strong> Sua Cidade - UF</p>
                   </div>
                 </CardContent>
               </Card>

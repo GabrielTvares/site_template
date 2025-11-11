@@ -76,10 +76,10 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4 mt-6">
               {[
-                { icon: Linkedin, href: "https://www.linkedin.com/company/navibi/" },
-                // { icon: Twitter, href: "#" },
-                { icon: Instagram, href: "https://www.instagram.com/navibi.ai?igsh=MTg3OHFkam1ueDMycQ%3D%3D&utm_source=qr" },
-                // { icon: Mail, href: "#" }
+                { icon: Linkedin, href: "https://www.linkedin.com/company/sua-empresa/" },
+                { icon: Twitter, href: "https://twitter.com/sua-empresa" },
+                { icon: Instagram, href: "https://www.instagram.com/sua-empresa/" },
+                { icon: Mail, href: "mailto:contato@suaempresa.com.br" }
               ].map((social, i) => {
                 const Icon = social.icon;
                 return (
