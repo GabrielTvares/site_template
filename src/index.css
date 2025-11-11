@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Navi BI Premium Color System - All HSL */
+    --gold: 40 48% 64%;
+    --gold-dark: 40 48% 54%;
+    --gold-light: 40 48% 74%;
+    
+    --petrol: 198 97% 11%;
+    --petrol-light: 198 97% 21%;
+    --petrol-dark: 198 97% 6%;
+    
+    --ice: 300 33% 99%;
+    --gray-blue: 198 26% 32%;
+    --black-soft: 20 12% 10%;
+    --black-deep: 0 0% 0%;
+    
+    /* Semantic tokens */
+    --background: 198 97% 11%;
+    --foreground: 300 33% 99%;
+
+    --card: 198 97% 6%;
+    --card-foreground: 300 33% 99%;
+
+    --popover: 198 97% 6%;
+    --popover-foreground: 300 33% 99%;
+
+    --primary: 40 48% 64%;
+    --primary-foreground: 20 12% 10%;
+
+    --secondary: 198 26% 32%;
+    --secondary-foreground: 300 33% 99%;
+
+    --muted: 198 97% 21%;
+    --muted-foreground: 300 33% 79%;
+
+    --accent: 40 48% 64%;
+    --accent-foreground: 20 12% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 300 33% 99%;
+
+    --border: 198 26% 32%;
+    --input: 198 97% 21%;
+    --ring: 40 48% 64%;
+
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(198 97% 11%) 0%, hsl(20 12% 10%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40 48% 74%) 0%, hsl(40 48% 54%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(198 97% 11% / 0.7) 0%, hsla(198 97% 21% / 0.5) 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 10px 40px hsla(40 48% 64% / 0.3);
+    --shadow-elevated: 0 20px 60px hsla(0 0% 0% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-display: swap;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-display: swap;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    background: linear-gradient(135deg, hsla(198, 97%, 11%, 0.7) 0%, hsla(198, 97%, 21%, 0.5) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsla(40, 48%, 64%, 0.2);
+  }
+
+  @media (max-width: 640px) {
+    .glass-effect {
+      backdrop-filter: blur(6px);
+      background: linear-gradient(135deg, hsla(198, 97%, 11%, 0.85) 0%, hsla(198, 97%, 21%, 0.7) 100%);
+      border: 1px solid hsla(40, 48%, 64%, 0.08);
+    }
+  }
+  
+  .gold-glow {
+    box-shadow: 0 0 30px hsla(40, 48%, 64%, 0.4);
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(40 48% 74%) 0%, hsl(40 48% 54%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsla(40, 48%, 64%, 0.3);
+    }
+    to {
+      box-shadow: 0 0 40px hsla(40, 48%, 64%, 0.6);
+    }
+  }
+  
+  /* 
+    ═══════════════════════════════════════════════════════════════════
+    📱 OTIMIZAÇÕES DE PERFORMANCE MOBILE
+    ═══════════════════════════════════════════════════════════════════
+  */
+  
+  /* Desabilita animações em mobile (economia de bateria e GPU) */
+  @media (max-width: 768px) {
+    .animate-float,
+    .animate-glow {
+      animation: none !important;
+    }
+    
+    /* Reduz sombras complexas em mobile (melhora rendering) */
+    .gold-glow {
+      box-shadow: 0 0 15px hsla(40, 48%, 64%, 0.2);
+    }
+  }
+  
+  /* Otimização para redes lentas (3G) */
+  @media (prefers-reduced-data: reduce) {
+    .animate-float,
+    .animate-glow {
+      animation: none !important;
+    }
+  }
+  
+  /* Hardware acceleration para elementos críticos */
+  .hero-section,
+  .scroll-smooth {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  /* Previne layout shift (CLS) em mobile */
+  img {
+    content-visibility: auto;
+  }
+}

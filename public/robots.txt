@@ -1,0 +1,15 @@
+# robots.txt for Navi BI
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://navibi.ai/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Disallow admin/config paths if any
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /firebase.json

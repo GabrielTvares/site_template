@@ -1,0 +1,243 @@
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+// Componente temporariamente desativado até definição dos planos e preços
+const Pricing = () => {
+  const { ref, isVisible } = useScrollAnimation();
+  return null;
+
+  /* O código abaixo será ativado quando os planos estiverem definidos
+
+  const plans = [
+    {
+      name: "Essencial",
+      description: "Para pequenas empresas",
+      price: "R$ 297",
+      period: "/mês",
+      features: [
+        "Até 5 usuários",
+        "Dashboards básicos",
+        "Relatórios DRE",
+        "Suporte por email",
+        "Atualizações mensais"
+      ],
+      featured: false
+    },
+    {
+      name: "Profissional",
+      description: "Ideal para médias empresas",
+      price: "R$ 797",
+      period: "/mês",
+      features: [
+        "Usuários ilimitados",
+        "Dashboards avançados",
+        "DRE completa + análises",
+        "Integrações ilimitadas",
+        "Suporte prioritário 24/7",
+        "Treinamento dedicado",
+        "API personalizada"
+      ],
+      featured: true
+    },
+    {
+      name: "Enterprise",
+      description: "Soluções personalizadas",
+      price: "Custom",
+      period: "",
+      features: [
+        "Tudo do Profissional",
+        "Customização completa",
+        "Servidor dedicado",
+        "SLA garantido",
+        "Consultoria estratégica",
+        "Desenvolvimento sob medida"
+      ],
+      featured: false
+    }
+  ];
+
+  return (
+    <section id="preços" className="py-32 bg-gradient-to-b from-background to-petrol-dark/20 relative overflow-hidden" ref={ref}>
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gold rounded-full blur-3xl" />
+      </div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-4xl md:text-5xl font-poppins font-bold mb-4">
+            <span className="text-gradient-gold">Planos e Preços</span>
+          </h2>
+          <p className="text-[#C4D7E0] text-lg max-w-2xl mx-auto">
+            Escolha o plano ideal para o seu negócio.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {plans.map((plan, index) => (
+            <motion.div
+              key={index}
+              className={`glass-effect p-8 rounded-2xl relative overflow-hidden transition-all duration-300 hover:scale-105 ${
+                plan.featured ? "border-2 border-gold shadow-gold" : "border border-gold/20"
+              }`}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              {plan.featured && (
+
+                // Backup do componente Pricing com código comentado para futura reativação
+                import { Button } from "@/components/ui/button";
+                import { Check } from "lucide-react";
+                import { motion } from "framer-motion";
+                import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+                const Pricing = () => {
+                  // Descomente o bloco abaixo para reativar a seção de planos e preços
+                  /*
+                  const { ref, isVisible } = useScrollAnimation();
+                  const plans = [
+                    {
+                      name: "Essencial",
+                      description: "Para pequenas empresas",
+                      price: "R$ 297",
+                      period: "/mês",
+                      features: [
+                        "Até 5 usuários",
+                        "Dashboards básicos",
+                        "Relatórios DRE",
+                        "Suporte por email",
+                        "Atualizações mensais"
+                      ],
+                      featured: false
+                    },
+                    {
+                      name: "Profissional",
+                      description: "Ideal para médias empresas",
+                      price: "R$ 797",
+                      period: "/mês",
+                      features: [
+                        "Usuários ilimitados",
+                        "Dashboards avançados",
+                        "DRE completa + análises",
+                        "Integrações ilimitadas",
+                        "Suporte prioritário 24/7",
+                        "Treinamento dedicado",
+                        "API personalizada"
+                      ],
+                      featured: true
+                    },
+                    {
+                      name: "Enterprise",
+                      description: "Soluções personalizadas",
+                      price: "Custom",
+                      period: "",
+                      features: [
+                        "Tudo do Profissional",
+                        "Customização completa",
+                        "Servidor dedicado",
+                        "SLA garantido",
+                        "Consultoria estratégica",
+                        "Desenvolvimento sob medida"
+                      ],
+                      featured: false
+                    }
+                  ];
+
+                  return (
+                    <section id="preços" className="py-32 bg-gradient-to-b from-background to-petrol-dark/20 relative overflow-hidden" ref={ref}>
+                      <div className="absolute inset-0 opacity-5">
+                        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gold rounded-full blur-3xl" />
+                      </div>
+
+                      <div className="container mx-auto px-6 relative z-10">
+                        <motion.div 
+                          className="text-center mb-16"
+                          initial={{ opacity: 0, y: 30 }}
+                          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <h2 className="text-4xl md:text-5xl font-poppins font-bold mb-4">
+                            <span className="text-gradient-gold">Planos e Preços</span>
+                          </h2>
+                          <p className="text-[#C4D7E0] text-lg max-w-2xl mx-auto">
+                            Escolha o plano ideal para o seu negócio.
+                          </p>
+                        </motion.div>
+
+                        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                          {plans.map((plan, index) => (
+                            <motion.div
+                              key={index}
+                              className={`glass-effect p-8 rounded-2xl relative overflow-hidden transition-all duration-300 hover:scale-105 ${
+                                plan.featured ? "border-2 border-gold shadow-gold" : "border border-gold/20"
+                              }`}
+                              initial={{ opacity: 0, y: 50 }}
+                              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                              transition={{ duration: 0.5, delay: index * 0.2 }}
+                            >
+                              {plan.featured && (
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                                  <div className="bg-gold text-black-soft px-6 py-2 rounded-full text-sm font-semibold">
+                                    Mais Popular
+                                  </div>
+                                </div>
+                              )}
+
+                              <div className="mb-8">
+                                <h3 className="text-2xl font-poppins font-bold text-foreground mb-2">
+                                  {plan.name}
+                                </h3>
+                                <p className="text-muted-foreground text-sm">{plan.description}</p>
+                              </div>
+
+                              <div className="mb-8">
+                                <div className="flex items-baseline gap-2">
+                                  <span className={`text-5xl font-bold ${
+                                    plan.featured ? 'text-gradient-gold' : 'text-foreground'
+                                  }`}>
+                                    {plan.price}
+                                  </span>
+                                  {plan.period && (
+                                    <span className="text-muted-foreground">{plan.period}</span>
+                                  )}
+                                </div>
+                              </div>
+
+                              <ul className="space-y-4 mb-8">
+                                {plan.features.map((feature, i) => (
+                                  <li key={i} className="flex items-start gap-3">
+                                    <Check className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
+                                      plan.featured ? 'text-gold' : 'text-muted-foreground'
+                                    }`} />
+                                    <span className="text-foreground">{feature}</span>
+                                  </li>
+                                ))}
+                              </ul>
+
+                              <Button 
+                                className={`w-full ${
+                                  plan.featured
+                                    ? 'bg-gold hover:bg-gold-dark text-black-soft shadow-gold'
+                                    : 'bg-secondary hover:bg-secondary/80'
+                                } font-semibold py-6 rounded-xl transition-all duration-300`}
+                              >
+                                {plan.name === "Enterprise" ? "Falar com Vendas" : "Começar Agora"}
+                              </Button>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </section>
+                  );
+                  */
+                  return null;
+                };
+
+                export default Pricing;

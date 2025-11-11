@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- 
+      ══════════════════════════════════════════════════════════════════
+      📱 OTIMIZAÇÕES MOBILE-FIRST
+      ══════════════════════════════════════════════════════════════════
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    
+    <!-- Desabilita tap highlight (melhora UX mobile) -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- 
+      ═══════════════════════════════════════════════════════════════════════
+      🚀 OTIMIZAÇÕES DE PERFORMANCE - CORE WEB VITALS & LIGHTHOUSE
+      ═══════════════════════════════════════════════════════════════════════
+      Baseado no diagnóstico Lighthouse:
+      • Latência máxima do caminho crítico: 433ms
+      • Encadeamento: HTML (89ms) → CSS (169ms) → JS (433ms)
+      • Objetivo: Reduzir LCP, CLS e TBT (Desktop + Mobile)
+      ═══════════════════════════════════════════════════════════════════════
+    -->
+    
+    <!-- 
+      1. PRECONNECT DOMÍNIO PRINCIPAL
+      ══════════════════════════════════════════════════════════════════
+      Estabelece conexão antecipada com o próprio domínio (origin hint)
+      Benefício: Reduz latência de DNS, TCP handshake e TLS
+      Impacto: -200ms a -600ms no tempo crítico
+      Cache-Control recomendado: max-age=31536000, immutable
+    -->
+    <link rel="preconnect" href="https://navibi.ai" crossorigin />
+    
+    <!-- 
+      2. PRECONNECT DOMÍNIOS EXTERNOS CRÍTICOS
+      ══════════════════════════════════════════════════════════════════
+      Conecta antecipadamente com CDNs e serviços de terceiros
+      Ordem de prioridade: Firebase > Analytics > Fontes
+    -->
+    <link rel="preconnect" href="https://firebase.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://firebaseinstallations.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
+    
+    <!-- 
+      3. DNS-PREFETCH (Fallback para navegadores antigos)
+      ══════════════════════════════════════════════════════════════════
+      Resolve DNS antecipadamente para domínios secundários
+      Impacto: -20ms a -120ms por domínio
+    -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
+    
+    <!-- 
+      4. PRELOAD CSS CRÍTICO (Alta Prioridade)
+      ══════════════════════════════════════════════════════════════════
+      Força o download imediato do CSS principal
+      Reduz o bloqueio de renderização (render-blocking)
+      Impacto no LCP: -300ms a -800ms
+      
+      ⚠️ ATENÇÃO: Atualize o hash do arquivo conforme build do Vite
+      Exemplo: /assets/index-DMMndI2g.css
+    -->
+    <link rel="preload" href="/assets/index-BM2fpCYz.css" as="style" fetchpriority="high" />
+    
+    <!-- 
+      5. PRELOAD DE IMAGEM LCP (Mobile + Desktop)
+      ══════════════════════════════════════════════════════════════════
+      Força o download imediato da imagem hero (maior elemento visível)
+      Crítico para melhorar o LCP em mobile (3G/4G)
+      
+      ⚠️ Ajuste o caminho conforme sua imagem de hero principal
+    -->
+    <link rel="preload" href="/assets/hero-bg-CW00WD8z.jpg" as="image" fetchpriority="high" media="(min-width: 768px)" />
+    
+    <!-- 
+      6. RESOURCE HINTS PARA MOBILE
+      ══════════════════════════════════════════════════════════════════
+      Em redes lentas (3G), prioriza recursos críticos
+    -->
+    <link rel="preload" href="/assets/vendor-react-CYzM1FNY.js" as="script" crossorigin />
+    
+    <!-- 
+      7. MODULEPRELOAD JAVASCRIPT (Vite ES Modules)
+      ══════════════════════════════════════════════════════════════════
+      Carrega módulos ES6 com prioridade (substitui preload para JS)
+      O Vite injeta automaticamente modulepreload para chunks
+      Impacto: Reduz o encadeamento de requests
+      
+      ⚠️ NÃO use <script defer> aqui - o Vite já otimiza automaticamente
+    -->
+    
+    <!-- Primary Meta Tags -->
+    <title>Navi BI - Revelando o caminho da Prosperidade</title>
+    <meta name="title" content="Navi BI - Business Intelligence para Decisões Inteligentes | Análise de Dados" />
+    <meta name="description" content="Transforme dados em decisões estratégicas com o Navi BI. Plataforma completa de Business Intelligence com dashboards interativos, análises financeiras e relatórios automatizados. Aumente sua eficiência em até 40%." />
+    <meta name="keywords" content="Business Intelligence, BI, análise de dados, dashboards, Power BI, relatórios financeiros, análise financeira, DRE, inteligência de negócios, automação de relatórios, dados estratégicos, gestão empresarial" />
+    <meta name="author" content="Navi BI - Maycon Pires" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Portuguese" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://navibi.ai/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/src/assets/favicon-32x32.png" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#012739">
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/navi-logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/navi-logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/src/assets/navi-logo.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://navibi.ai/" />
+    <meta property="og:title" content="Navi BI - Business Intelligence para Decisões Inteligentes" />
+    <meta property="og:description" content="Transforme dados em decisões estratégicas. Plataforma completa de BI com dashboards interativos e análises financeiras. Aumente sua eficiência em até 40%." />
+    <meta property="og:image" content="https://navibi.ai/src/assets/navi-logo.png" />
+    <meta property="og:site_name" content="Navi BI" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://navibi.ai/" />
+    <meta name="twitter:title" content="Navi BI - Business Intelligence para Decisões Inteligentes" />
+    <meta name="twitter:description" content="Transforme dados em decisões estratégicas com dashboards interativos e análises financeiras automatizadas." />
+    <meta name="twitter:image" content="https://navibi.ai/src/assets/navi-logo.png" />
+    <meta name="twitter:creator" content="@navi_bi" />
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Navi BI",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "500"
+      },
+      "description": "Plataforma de Business Intelligence para análise de dados, dashboards interativos e relatórios financeiros automatizados."
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Navi BI",
+      "url": "https://navibi.ai",
+      "logo": "https://navibi.ai/src/assets/navi-logo.png",
+      "description": "Plataforma de Business Intelligence que transforma dados em decisões inteligentes",
+      "founder": {
+        "@type": "Person",
+        "name": "Maycon Pires"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-32-98709-1291",
+        "contactType": "Customer Service",
+        "availableLanguage": "Portuguese"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/navi-bi",
+        "https://twitter.com/navi_bi"
+      ]
+    }
+    </script>
+    
+    <!-- 
+      4. GOOGLE ANALYTICS - Carregamento Assíncrono Otimizado
+      Benefício: Não bloqueia renderização da página
+      Impacto: Evita bloqueio de 100-300ms no caminho crítico
+    -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K4ETPY0L2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2K4ETPY0L2', {
+        'send_page_view': false  // Envia pageview manualmente após carregamento completo
+      });
+    </script>
+
+    <!-- Contentsquare  Hotjar -->
+    <script src="https://t.contentsquare.net/uxa/2b1023f896133.js"></script>
+    <!-- 
+      5. GOOGLE FONTS - Otimização Avançada
+      Benefício: Carrega fontes sem bloquear renderização
+      Impacto: Elimina render-blocking, melhora FCP em -200ms a -500ms
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Carrega fontes de forma assíncrona com display=swap para evitar FOIT -->
+    <link 
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      media="print" 
+      onload="this.media='all'"
+    >
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- 
+      6. CRITICAL CSS INLINE
+      Benefício: Renderiza conteúdo above-the-fold imediatamente
+      Impacto: Melhora FCP e LCP em -400ms a -1000ms
+    -->
+    <style>
+      /* Font fallback para evitar FOUT (Flash of Unstyled Text) */
+      * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        background-color: #fff;
+      }
+      
+      /* Evitar Cumulative Layout Shift (CLS) */
+      #root {
+        min-height: 100vh;
+        display: block;
+      }
+      
+      /* Loading state otimizado para LCP */
+      #root:empty::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg, #012739 0%, #024a6b 100%);
+      }
+      
+      /* Previne flash de conteúdo não estilizado */
+      .invisible {
+        visibility: hidden;
+      }
+    </style>
+    
+    <!-- 
+      7. CSS E JS (injetados automaticamente pelo Vite no build)
+      ══════════════════════════════════════════════════════════════════
+      O Vite injeta automaticamente durante o build:
+      • <link rel="stylesheet" href="/assets/index-[hash].css" />
+      • <script type="module" src="/assets/index-[hash].js"></script>
+      
+      ⚠️ NÃO adicione essas tags manualmente!
+      O hash muda a cada build e o Vite gerencia isso automaticamente.
+    -->
+    
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- 
+      8. SCRIPT MODULE COM DEFER IMPLÍCITO
+      Benefício: Scripts type="module" são automaticamente defer
+      Impacto: Não bloqueia parsing do HTML
+    -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- 
+      9. CARREGAMENTO TARDIO DO FIREBASE (opcional)
+      Descomente para carregar Firebase apenas quando necessário
+      Benefício: Reduz bundle inicial e melhora TTI
+    -->
+    <!--
+    <script type="module">
+      // Carrega Firebase apenas após interação do usuário ou idle
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => import('/src/lib/firebase.ts'));
+      } else {
+        setTimeout(() => import('/src/lib/firebase.ts'), 2000);
+      }
+    </script>
+    -->
+  </body>
+</html>
