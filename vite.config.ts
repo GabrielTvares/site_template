@@ -44,8 +44,6 @@ export default defineConfig(({ mode }) => ({
         manualChunks: {
           // React DEVE ser separado primeiro (outros vendors dependem dele)
           "vendor-react": ["react", "react-dom", "react/jsx-runtime"],
-          // Firebase em chunk separado (lazy load)
-          "vendor-firebase": ["firebase/app", "firebase/analytics"],
         },
         // Nomes de arquivo com hash para cache imutável
         chunkFileNames: "assets/[name]-[hash].js",
@@ -64,6 +62,5 @@ export default defineConfig(({ mode }) => ({
   // Otimizações de performance
   optimizeDeps: {
     include: ["react", "react-dom"],
-    exclude: ["firebase/app", "firebase/analytics"], // Carrega sob demanda
   },
 }));
