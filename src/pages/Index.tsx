@@ -20,7 +20,7 @@ const Index = () => {
     }
   }, [location]);
   return (
-    <main className="min-h-screen bg-background">
+    <main className="bg-background">
       <Hero />
       <Features />
       <Differentials />

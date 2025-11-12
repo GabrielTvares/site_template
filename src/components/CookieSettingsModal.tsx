@@ -125,7 +125,7 @@ export const CookieSettingsModal = ({
         <ScrollArea className="max-h-[50vh] pr-4">
           <div className="space-y-6 py-4">
             {/* Informações sobre privacidade */}
-            <div className="bg-petrol-light/50 border border-gold/20 rounded-lg p-4">
+            <div className="bg-slate-light/50 border border-gold/20 rounded-lg p-4">
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-foreground/90">

@@ -12,9 +12,9 @@ const PoliticaDePrivacidade = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-petrol-dark/90 via-petrol/80 to-background">
+      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-slate-dark/90 via-slate-premium/80 to-background">
         {/* Floating particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(20)].map((_, i) => (
@@ -36,7 +36,7 @@ const PoliticaDePrivacidade = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-petrol-light/50 border border-gold/20 text-gold px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 bg-slate-light/50 border border-gold/20 text-gold px-4 py-2 rounded-full mb-6">
               <Shield className="w-4 h-4" />
               <span className="text-sm font-medium">Atualizado em Novembro de 2025</span>
             </div>
@@ -64,7 +64,7 @@ const PoliticaDePrivacidade = () => {
           <div className="max-w-4xl mx-auto space-y-12">
             
             {/* Introdução */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <FileText className="w-6 h-6" />
@@ -88,7 +88,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Dados Coletados */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Database className="w-6 h-6" />
@@ -126,7 +126,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Finalidade do Uso dos Dados */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Eye className="w-6 h-6" />
@@ -152,7 +152,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Base Legal */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <UserCheck className="w-6 h-6" />
@@ -174,7 +174,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Compartilhamento de Dados */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Database className="w-6 h-6" />
@@ -199,7 +199,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Segurança dos Dados */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Lock className="w-6 h-6" />
@@ -225,7 +225,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Retenção de Dados */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Clock className="w-6 h-6" />
@@ -248,7 +248,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Direitos do Titular */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Shield className="w-6 h-6" />
@@ -259,35 +259,35 @@ const PoliticaDePrivacidade = () => {
                 <div className="space-y-4 text-white">
                   <p>Você tem os seguintes direitos em relação aos seus dados pessoais:</p>
                   <div className="grid gap-4 mt-4">
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Confirmação e Acesso</h4>
                       <p>Confirmar se tratamos seus dados e solicitar acesso a eles.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Correção</h4>
                       <p>Solicitar a correção de dados incompletos, inexatos ou desatualizados.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Anonimização, Bloqueio ou Eliminação</h4>
                       <p>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Portabilidade</h4>
                       <p>Solicitar a portabilidade dos dados a outro fornecedor de serviço.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Eliminação de Dados Tratados com Consentimento</h4>
                       <p>Solicitar a eliminação dos dados pessoais tratados com base no seu consentimento.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Informação sobre Compartilhamento</h4>
                       <p>Obter informações sobre com quem compartilhamos seus dados.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Revogação do Consentimento</h4>
                       <p>Revogar o consentimento a qualquer momento.</p>
                     </div>
-                    <div className="p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                    <div className="p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                       <h4 className="font-semibold text-white mb-2">✓ Oposição</h4>
                       <p>Se opor ao tratamento realizado com base em legítimo interesse.</p>
                     </div>
@@ -297,7 +297,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Cookies */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Eye className="w-6 h-6" />
@@ -317,7 +317,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Alterações */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <FileText className="w-6 h-6" />
@@ -340,7 +340,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Contato */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Mail className="w-6 h-6" />
@@ -395,7 +395,7 @@ const PoliticaDePrivacidade = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 p-4 bg-petrol-light/10 rounded-lg border border-gold/10">
+                  <div className="mt-6 p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                     <p className="text-sm">
                       <strong className="text-white">Tempo de Resposta:</strong> Responderemos suas solicitações em até 15 dias úteis, conforme estabelecido pela LGPD.
                     </p>
@@ -405,7 +405,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* Lei Aplicável */}
-            <Card className="border-gold/20 bg-card/50 backdrop-blur">
+            <Card className="border-gold/20 bg-gradient-to-br from-slate-dark/70 to-slate-premium/50 backdrop-blur-md border-gold/30 hover:border-gold/50 hover:shadow-xl transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-2xl text-gold">
                   <Shield className="w-6 h-6" />
@@ -425,7 +425,7 @@ const PoliticaDePrivacidade = () => {
             </Card>
 
             {/* CTA Final */}
-            <div className="text-center p-8 bg-gradient-to-r from-petrol-dark/50 to-petrol/50 rounded-lg border border-gold/20">
+            <div className="text-center p-8 bg-gradient-to-r from-slate-dark/50 to-slate-premium/50 rounded-lg border border-gold/20">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Tem dúvidas sobre privacidade?
               </h3>

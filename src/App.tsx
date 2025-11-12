@@ -10,6 +10,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import QuemSomos from "./pages/QuemSomos";
 import PoliticaDeCookies from "./pages/PoliticaDeCookies";
 import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import Consultoria from "./pages/Consultoria";
+import MentoriaExa from "./pages/MentoriaExa";
 import { CookieBanner } from "@/components/CookieBanner";
 // ...existing code...
 
@@ -27,6 +30,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/QuemSomos" element={<QuemSomos />} />
+          <Route path="/consultoria" element={<Consultoria />} />
+          <Route path="/mentoria-exa" element={<MentoriaExa />} />
+          <Route path="/depoimentos" element={<TestimonialsPage />} />
           <Route path="/politica-de-cookies" element={<PoliticaDeCookies />} />
           <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
 // ...existing code...

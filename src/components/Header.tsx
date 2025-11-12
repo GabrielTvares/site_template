@@ -1,11 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logoNavi from "@/assets/logo_navi_vetorizada_branca_bi_260x120.svg";
+import { ArrowRight } from "lucide-react";
+import logoTurbineduca from "@/assets/icone_turbineduca.png";
 
 const menu: Array<{
   label: string;
   to: string;
   onClick?: () => void;
+  external?: boolean;
 }> = [
   { 
     label: "INÍCIO", 
@@ -14,14 +16,47 @@ const menu: Array<{
       setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
     }
   },
-  { label: "SOBRE", to: "/QuemSomos" },
-  { label: "FUNCIONALIDADES", to: "#funcionalidades" },
-  // { label: "PREÇOS", to: "#preços" },
-  // { label: "DEMONSTRAÇÃO", to: "#demonstração" },
+  { 
+    label: "SOBRE", 
+    to: "/QuemSomos",
+    onClick: () => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  },
+  { 
+    label: "CONSULTORIA", 
+    to: "/consultoria",
+    onClick: () => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  },
+  { 
+    label: "MENTORIA EXA", 
+    to: "/mentoria-exa",
+    onClick: () => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  },
+  { 
+    label: "DEPOIMENTOS", 
+    to: "/depoimentos",
+    onClick: () => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  },
+  { 
+    label: "BLOG", 
+    to: "/BLOG",
+    onClick: () => {
+      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+    }
+  },
   { label: "CONTATO", to: "#contato" },
+  { label: "NAVI BI", to: "http://navibi.ai", external: true },
 ];
 
 const isAnchor = (to: string) => to.startsWith("#");
+const isExternal = (item: any) => item.external === true;
 
 const Header = () => {
   const location = useLocation();
@@ -103,7 +138,7 @@ const Header = () => {
 // HEADER FIXO--V
 // const Header = () => {
   return (
-  <header className="w-full fixed top-0 z-40 backdrop-blur-md bg-petrol-dark/90 flex items-center justify-between px-6 md:px-8 py-3 md:py-3 shadow-lg">
+  <header className="w-full fixed top-0 z-40 backdrop-blur-md bg-slate-premium/95 flex items-center justify-between px-6 md:px-8 py-3 md:py-3 shadow-lg border-b border-slate-light/20">
       <div className="flex items-center gap-3">
         <Link
           to="/"
@@ -114,8 +149,8 @@ const Header = () => {
           }}
         >
           <img 
-            src={logoNavi} 
-            alt="logo-navi" 
+            src={logoTurbineduca} 
+            alt="logo-turbineduca" 
             width={116} 
             height={82} 
             className="cursor-pointer"
@@ -130,7 +165,20 @@ const Header = () => {
         <ul className="flex gap-4 rounded-full px-6 py-2 bg-transparent border border">
           {menu.map((item) => (
             <li key={item.label}>
-              {isAnchor(item.to) ? (
+              {isExternal(item) ? (
+                <a
+                  href={item.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-4 py-2 rounded-full font-semibold text-sm transition-colors ${
+                    activeItem === item.label
+                      ? "text-gold"
+                      : "text-white hover:text-gold"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ) : isAnchor(item.to) ? (
                 <a
                   href={item.to}
                   onClick={e => {
@@ -173,6 +221,19 @@ const Header = () => {
         </ul>
       </nav>
 
+      {/* CTA Button - Desktop */}
+      <div className="hidden md:flex items-center gap-4">
+        <a
+          href="https://plataforma.turbineduca.com.br/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-5 py-2 bg-gradient-to-r from-gold to-gold-dark text-black-soft font-semibold text-sm rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gold/50 flex items-center gap-1.5"
+        >
+          EAD
+          <ArrowRight className="w-3.5 h-3.5" />
+        </a>
+      </div>
+
       {/* Mobile hamburger */}
       <button
         ref={menuButtonRef}
@@ -203,7 +264,7 @@ const Header = () => {
         {/* Menu content */}
         <div 
           ref={mobileMenuRef}
-          className={`fixed inset-x-0 top-0 pt-20 pb-8 px-6 bg-gradient-to-b from-petrol-dark via-petrol to-petrol-dark shadow-2xl border-b-4 border-gold/30 transform transition-all duration-300 ${
+          className={`fixed inset-x-0 top-0 pt-20 pb-8 px-6 bg-gradient-to-b from-slate-dark via-slate-premium to-slate-dark shadow-2xl border-b-4 border-gold/30 transform transition-all duration-300 ${
             mobileOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
@@ -218,7 +279,21 @@ const Header = () => {
                   transform: mobileOpen ? 'translateX(0)' : 'translateX(-20px)'
                 }}
               >
-                {isAnchor(item.to) ? (
+                {isExternal(item) ? (
+                  <a
+                    href={item.to}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileOpen(false)}
+                    className={`block px-6 py-4 rounded-lg font-semibold text-base transition-all duration-200 ${
+                      activeItem === item.label
+                        ? "bg-gold/20 text-gold border-l-4 border-gold"
+                        : "text-white hover:bg-slate-light/30 hover:text-gold hover:border-l-4 hover:border-gold/50 border-l-4 border-transparent"
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                ) : isAnchor(item.to) ? (
                   <a
                     href={item.to}
                     onClick={e => {
@@ -235,7 +310,7 @@ const Header = () => {
                     className={`block px-6 py-4 rounded-lg font-semibold text-base transition-all duration-200 ${
                       activeItem === item.label
                         ? "bg-gold/20 text-gold border-l-4 border-gold"
-                        : "text-white hover:bg-petrol-light/30 hover:text-gold hover:border-l-4 hover:border-gold/50 border-l-4 border-transparent"
+                        : "text-white hover:bg-slate-light/30 hover:text-gold hover:border-l-4 hover:border-gold/50 border-l-4 border-transparent"
                     }`}
                   >
                     {item.label}
@@ -251,7 +326,7 @@ const Header = () => {
                     className={`block px-6 py-4 rounded-lg font-semibold text-base transition-all duration-200 ${
                       activeItem === item.label
                         ? "bg-gold/20 text-gold border-l-4 border-gold"
-                        : "text-white hover:bg-petrol-light/30 hover:text-gold hover:border-l-4 hover:border-gold/50 border-l-4 border-transparent"
+                        : "text-white hover:bg-slate-light/30 hover:text-gold hover:border-l-4 hover:border-gold/50 border-l-4 border-transparent"
                     }`}
                   >
                     {item.label}
@@ -261,9 +336,23 @@ const Header = () => {
             ))}
           </ul>
           
+          {/* CTA Button - Mobile */}
+          <div className="mt-6 px-6">
+            <a
+              href="https://plataforma.turbineduca.com.br/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-gradient-to-r from-gold to-gold-dark text-black-soft font-semibold rounded-lg hover:shadow-lg transition-all duration-300 border border-gold/50"
+            >
+              EAD
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+
           {/* Decorative element */}
           <div className="mt-8 pt-6 border-t border-gold/20 text-center">
-            <p className="text-sm text-white/60">Navi BI • Revelando o caminho da prosperidade</p>
+            <p className="text-sm text-white/60">Turbineduca • Revelando o caminho da prosperidade</p>
           </div>
         </div>
       </div>

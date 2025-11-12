@@ -17,9 +17,9 @@ const PoliticaDeCookies = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       {/* Hero Section com Background */}
-      <section className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-petrol-dark/90 via-petrol/80 to-background">
+      <section className="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-slate-dark/90 via-slate-premium/80 to-background">
         {/* Partículas flutuantes de fundo */}
         <div className="absolute inset-0 overflow-hidden opacity-30">
           {[...Array(20)].map((_, i) => (
@@ -60,7 +60,7 @@ const PoliticaDeCookies = () => {
                 <CheckCircle2 className="w-4 h-4 text-gold" />
                 Conformidade GDPR
               </span>
-              <span className="flex items-center gap-2 bg-petrol-light/50 border border-gold/20 px-4 py-2 rounded-full">
+              <span className="flex items-center gap-2 bg-slate-light/50 border border-gold/20 px-4 py-2 rounded-full">
                 <Clock className="w-4 h-4 text-gold" />
                 Atualizado em: Novembro 2025
               </span>

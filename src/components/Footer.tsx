@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Linkedin, Twitter, Instagram, Mail, Settings2, Trash2 } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Mail, Settings2, Trash2, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoNavi from "@/assets/logo_navi_vetorizada_branca_bi_260x120.svg";
+import logoTurbineduca from "@/assets/icone_turbineduca.png";
 import privacyIcon from "@/assets/privacyoptions29x14.png";
 import { useCookieConsent } from "@/hooks/useCookieConsent";
 import { CookieSettingsModal } from "./CookieSettingsModal";
@@ -63,8 +63,8 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src={logoNavi}
-                alt="Navi BI Logo"
+                src={logoTurbineduca}
+                alt="Turbineduca Logo"
                 className="w-32 h-auto"
                 style={{ objectFit: "contain" }}
               />
@@ -76,10 +76,9 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4 mt-6">
               {[
-                { icon: Linkedin, href: "https://www.linkedin.com/company/sua-empresa/" },
-                { icon: Twitter, href: "https://twitter.com/sua-empresa" },
-                { icon: Instagram, href: "https://www.instagram.com/sua-empresa/" },
-                { icon: Mail, href: "mailto:contato@suaempresa.com.br" }
+                { icon: Linkedin, href: "https://www.linkedin.com/company/turbineduca/" },
+                { icon: Instagram, href: "https://www.instagram.com/turbineduca.business/" },
+                { icon: Youtube, href: "https://www.youtube.com/@turbineduca.business" }
               ].map((social, i) => {
                 const Icon = social.icon;
                 return (
@@ -88,7 +87,7 @@ const Footer = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-petrol-light/50 border border-gold/20 flex items-center justify-center text-gold hover:bg-white hover:text-black-soft transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 rounded-lg bg-slate-light/50 border border-gold/20 flex items-center justify-center text-gold hover:bg-white hover:text-black-soft transition-all duration-300 hover:scale-110"
                   >
                     <Icon className="w-5 h-5" />
                   </a>

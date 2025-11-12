@@ -24,7 +24,7 @@ export const ValueCard: React.FC<ValueCardProps> = ({ icon, title, description, 
 
   return (
     <div
-      className={`w-[280px] ${heightClass} bg-petrol-dark/60 rounded-xl p-5 shadow-gold flex flex-col items-center text-center animate-fade-in hover:bg-petrol-dark/70 hover:shadow-gold-lg transition-all duration-300`}
+      className={`w-[280px] ${heightClass} bg-gradient-to-br from-slate-dark/80 to-slate-premium/60 backdrop-blur-sm rounded-xl p-5 shadow-lg border border-gold/20 flex flex-col items-center text-center animate-fade-in hover:border-gold/40 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300`}
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="w-32 h-32 flex items-center justify-center mb-2">

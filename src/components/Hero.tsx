@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.webp";
+import naviLogo from "@/assets/logo_navi_vetorizada_branca_bi_260x120.svg";
 import { motion } from "framer-motion";
 import { useParallax } from "@/hooks/useScrollAnimation";
 
@@ -20,7 +21,7 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-petrol-dark/90 via-petrol/80 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-dark/90 via-slate-premium/80 to-background" />
       
       {/* Animated Particles - Reduzido para mobile (performance) */}
       <div className="absolute inset-0 overflow-hidden hidden md:block">
@@ -41,37 +42,15 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center">
-        {/* Logo */}
-        {/* <motion.div 
-          className="flex justify-center mb-6 md:mb-8"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src={naviLogo} alt="Navi BI Logo" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 animate-float" />
-        </motion.div> */}
-
-        <motion.div 
-          className="flex justify-center mb-6"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <div className="inline-flex items-center gap-2 glass-effect px-6 py-3 rounded-full">
-            <Sparkles className="w-4 h-4 text-gold" />
-            <span className="text-sm font-medium text-gold">Inteligência de Negócios</span>
-          </div>
-        </motion.div>
-
         <motion.h1 
           className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-poppins font-bold mb-6 leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <span className="text-foreground">Revelamos o Caminho para a</span>
+          <span className="text-foreground">A Consultoria Disruptiva</span>
           <br />
-          <span className="text-gradient-gold">Prosperidade através dos Dados</span>
+          <span className="text-gradient-gold">Ágil</span>
         </motion.h1>
 
         <motion.p 
@@ -80,7 +59,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          A plataforma Navi BI revela a inteligência por trás dos dados.
+          Nosso propósito é Escalar Pessoas e Negócios.
         </motion.p>
 
         <motion.div 
@@ -127,7 +106,7 @@ const Hero = () => {
             { value: "+ 150", label: "Dashboards Entregues" },
             { value: "+400 horas", label: "Economizadas em Relatórios Manuais" },
           ].map((stat, i) => (
-            <div key={i} className="p-6 rounded-xl flex flex-col justify-center h-full bg-petrol-dark/50">
+            <div key={i} className="p-6 rounded-xl flex flex-col justify-center h-full bg-slate-dark/50">
               <div className="text-2xl md:text-3xl font-bold text-gradient-gold mb-2">
                 {stat.value}
               </div>

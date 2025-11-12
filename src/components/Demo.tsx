@@ -16,14 +16,14 @@ const Demo = () => {
   );
 
   return (
-    <section id="demonstração" className="py-32 bg-gradient-to-b from-petrol-dark/20 to-background relative overflow-hidden" ref={ref}>
+    <section id="demonstração" className="py-32 bg-gradient-to-b from-slate-dark/20 to-background relative overflow-hidden" ref={ref}>
       {/* Background Decoration (harmonizado com Hero/Features) */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         {/* Golden Glow - canto superior esquerdo */}
         <div className="absolute top-32 left-24 w-[32rem] h-[32rem] rounded-full bg-gradient-to-br from-gold/10 via-gold/5 to-transparent blur-[120px]" />
 
         {/* Deep Petrol Glow - canto inferior direito */}
-        <div className="absolute bottom-32 right-24 w-[36rem] h-[36rem] rounded-full bg-gradient-to-tr from-petrol/20 via-petrol-dark/10 to-transparent blur-[140px]" />
+        <div className="absolute bottom-32 right-24 w-[36rem] h-[36rem] rounded-full bg-gradient-to-tr from-slate-premium/20 via-slate-dark/10 to-transparent blur-[140px]" />
 
         {/* Partículas estáticas douradas */}
         {particles.map((p, i) => (

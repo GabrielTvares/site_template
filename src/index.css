@@ -8,55 +8,62 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Navi BI Premium Color System - All HSL */
+    /* Premium Slate & Gold Color System - All HSL */
     --gold: 40 48% 64%;
     --gold-dark: 40 48% 54%;
     --gold-light: 40 48% 74%;
     
-    --petrol: 198 97% 11%;
-    --petrol-light: 198 97% 21%;
-    --petrol-dark: 198 97% 6%;
+    /* Premium Slate Grays */
+    --slate-premium: 0 0% 10%;
+    --slate-dark: 0 0% 6%;
+    --slate-light: 0 0% 16%;
+    --slate-muted: 0 0% 25%;
+    
+    /* Legacy petrol (mantido para compatibilidade) */
+    --petrol: 0 0% 10%;
+    --petrol-light: 0 0% 16%;
+    --petrol-dark: 0 0% 6%;
     
     --ice: 300 33% 99%;
-    --gray-blue: 198 26% 32%;
-    --black-soft: 20 12% 10%;
+    --gray-blue: 0 0% 32%;
+    --black-soft: 0 0% 8%;
     --black-deep: 0 0% 0%;
     
     /* Semantic tokens */
-    --background: 198 97% 11%;
+    --background: 0 0% 10%;
     --foreground: 300 33% 99%;
 
-    --card: 198 97% 6%;
+    --card: 0 0% 12%;
     --card-foreground: 300 33% 99%;
 
-    --popover: 198 97% 6%;
+    --popover: 0 0% 6%;
     --popover-foreground: 300 33% 99%;
 
     --primary: 40 48% 64%;
-    --primary-foreground: 20 12% 10%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 198 26% 32%;
+    --secondary: 0 0% 25%;
     --secondary-foreground: 300 33% 99%;
 
-    --muted: 198 97% 21%;
+    --muted: 0 0% 16%;
     --muted-foreground: 300 33% 79%;
 
     --accent: 40 48% 64%;
-    --accent-foreground: 20 12% 10%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 300 33% 99%;
 
-    --border: 198 26% 32%;
-    --input: 198 97% 21%;
+    --border: 0 0% 20%;
+    --input: 0 0% 16%;
     --ring: 40 48% 64%;
 
     --radius: 0.75rem;
     
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(198 97% 11%) 0%, hsl(20 12% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
     --gradient-gold: linear-gradient(135deg, hsl(40 48% 74%) 0%, hsl(40 48% 54%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(198 97% 11% / 0.7) 0%, hsla(198 97% 21% / 0.5) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0 0% 10% / 0.7) 0%, hsla(0 0% 16% / 0.5) 100%);
     
     /* Shadows */
     --shadow-gold: 0 10px 40px hsla(40 48% 64% / 0.3);
@@ -89,7 +96,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .glass-effect {
-    background: linear-gradient(135deg, hsla(198, 97%, 11%, 0.7) 0%, hsla(198, 97%, 21%, 0.5) 100%);
+    background: linear-gradient(135deg, hsla(0, 0%, 6%, 0.7) 0%, hsla(0, 0%, 10%, 0.5) 100%);
     backdrop-filter: blur(20px);
     border: 1px solid hsla(40, 48%, 64%, 0.2);
   }
@@ -97,7 +104,7 @@ All colors MUST be HSL.
   @media (max-width: 640px) {
     .glass-effect {
       backdrop-filter: blur(6px);
-      background: linear-gradient(135deg, hsla(198, 97%, 11%, 0.85) 0%, hsla(198, 97%, 21%, 0.7) 100%);
+      background: linear-gradient(135deg, hsla(0, 0%, 6%, 0.85) 0%, hsla(0, 0%, 10%, 0.7) 100%);
       border: 1px solid hsla(40, 48%, 64%, 0.08);
     }
   }
@@ -137,6 +144,23 @@ All colors MUST be HSL.
     to {
       box-shadow: 0 0 40px hsla(40, 48%, 64%, 0.6);
     }
+  }
+  
+  @keyframes scroll-infinite {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll-infinite {
+    animation: scroll-infinite 40s linear infinite;
+  }
+  
+  .animate-scroll-infinite:hover {
+    animation-play-state: paused;
   }
   
   /* 

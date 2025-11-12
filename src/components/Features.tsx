@@ -39,7 +39,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="funcionalidades" className="py-12 sm:py-20 bg-gradient-to-b from-background to-petrol-dark/20 relative overflow-hidden" ref={ref}>
+    <section id="funcionalidades" className="py-12 sm:py-20 bg-gradient-to-b from-background to-slate-dark/20 relative overflow-hidden" ref={ref}>
       {/* Background Decoration (harmonizado com Hero) */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
         {/* Golden Glow - canto superior esquerdo */}
@@ -47,9 +47,9 @@ const Features = () => {
           className="absolute top-32 left-24 w-[32rem] h-[32rem] rounded-full bg-gradient-to-br from-gold/10 via-gold/5 to-transparent blur-[120px]"
         />
 
-        {/* Deep Petrol Glow - canto inferior direito */}
+        {/* Slate Glow - canto inferior direito */}
         <div
-          className="absolute bottom-32 right-24 w-[36rem] h-[36rem] rounded-full bg-gradient-to-tr from-petrol/20 via-petrol-dark/10 to-transparent blur-[140px]"
+          className="absolute bottom-32 right-24 w-[36rem] h-[36rem] rounded-full bg-gradient-to-tr from-slate-premium/20 via-slate-dark/10 to-transparent blur-[140px]"
         />
 
         {/* Optional: leves partículas estáticas (coerentes com o Hero) */}
@@ -88,7 +88,7 @@ const Features = () => {
             return (
               <motion.div
                 key={index}
-                className="glass-effect p-6 sm:p-8 rounded-2xl shadow-gold hover:shadow-elevated transition-all duration-300 group hover:scale-105 bg-petrol-dark/60 backdrop-blur-md border border-gold/10"
+                className="glass-effect p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group hover:scale-105 bg-gradient-to-br from-slate-dark/80 to-slate-premium/60 backdrop-blur-md border border-gold/20 hover:border-gold/40"
                 initial={{ opacity: 0, y: 50 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}

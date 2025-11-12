@@ -41,8 +41,8 @@ const QuemSomos = () => {
     [],
   );
   return (
-    <div className="relative min-h-screen flex flex-col justify-start overflow-hidden bg-[#012739]">
-      {/* Single solid page background (#012739) - visual effects kept inside cards */}
+    <div className="relative flex flex-col justify-start overflow-hidden bg-background">
+      {/* Single solid page background (slate) - visual effects kept inside cards */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         {/* Golden floating particles - same behavior as Hero */}
         <div className="absolute inset-0 overflow-hidden">
@@ -75,14 +75,14 @@ const QuemSomos = () => {
         transition: 'background-position 0.1s linear',
       }}
     >
-      <div className="absolute inset-0 bg-[#012739]/80 pointer-events-none" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-b from-petrol-dark/90 via-petrol/80 to-background" />
+      <div className="absolute inset-0 bg-slate-premium/80 pointer-events-none" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-dark/90 via-slate-premium/80 to-background" />
       {/* Seção título */}
       <section className="relative py-12 sm:py-16 md:py-20">
         {/* Golden floating particles removido para evitar erro de token inesperado */}
         <div className="relative max-w-4xl mx-auto text-center animate-fade-in px-6 py-8 sm:py-10 md:p-10 z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-gradient-gold mb-6">
-            Sobre o Navi BI
+            Sobre nossa Empresa
           </h1>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
             Transformando dados complexos em decisões inteligentes
@@ -117,8 +117,7 @@ const QuemSomos = () => {
                 </h2>
                 <div className="space-y-4 text-base md:text-lg text-white leading-relaxed">
                   <p className="text-lg md:text-xl whitespace-pre-line">
-                    O <span className="font-semibold text-gradient-gold text-1xl md:text-2xl">Navi BI </span> nasceu da percepção de que muitas empresas possuem dados valiosos, mas não sabem como utilizá-los para crescer. {'\n\n'}Nosso propósito é simples: Escalar Pessoas e Negócios.
-                    {'\n\n'}Com expertise em análises financeiras, dashboards interativos e relatórios automatizados, ajudamos empresas a navegarem pelo oceano de informações e encontrarem o caminho para o sucesso.
+                    <span className="font-semibold text-gradient-gold text-1xl md:text-2xl"></span>Somos uma consultoria empresarial disruptiva especialista em agilidade que faz a ponte das práticas consagradas do mercado com as novas descobertas da gestão de negócios com o objetivo de agilizar, prosperar e gerar perenidade nos empreendimentos de nossos clientes.  
                   </p>
                   </div>
               </div>

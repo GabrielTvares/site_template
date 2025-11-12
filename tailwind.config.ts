@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -58,6 +59,11 @@ export default {
           light: "hsl(var(--petrol-light))",
           dark: "hsl(var(--petrol-dark))",
         },
+        slate: {
+          premium: "#1a1a1a",
+          dark: "#0f0f0f",
+          light: "#2a2a2a",
+        },
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -101,5 +107,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;
