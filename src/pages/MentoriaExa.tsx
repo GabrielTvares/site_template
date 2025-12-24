@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import equipeBackground from "@/assets/equipe.png";
+import equipeBackground from "@/assets/equipe3.png";
 
 const MentoriaExa = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -133,11 +133,11 @@ const MentoriaExa = () => {
       <div className="relative z-10">
         {/* Hero Section */}
         <section 
-          className="pt-32 pb-16 md:pt-40 md:pb-24 relative"
+          className="pt-52 pb-28 md:pt-64 md:pb-44 xl:pt-[35rem] xl:pb-[24.5rem] relative"
           style={{
             backgroundImage: `url(${equipeBackground})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center bottom',
             backgroundRepeat: 'no-repeat',
           }}
         >

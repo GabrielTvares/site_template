@@ -37,20 +37,20 @@ const menu: Array<{
       setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
     }
   },
-  { 
-    label: "DEPOIMENTOS", 
-    to: "/depoimentos",
-    onClick: () => {
-      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
-    }
-  },
-  { 
-    label: "BLOG", 
-    to: "/BLOG",
-    onClick: () => {
-      setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
-    }
-  },
+  // { 
+  //   label: "DEPOIMENTOS", 
+  //   to: "/depoimentos",
+  //   onClick: () => {
+  //     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+  //   }
+  // },
+  // { 
+  //   label: "BLOG", 
+  //   to: "/BLOG",
+  //   onClick: () => {
+  //     setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
+  //   }
+  // },
   { label: "CONTATO", to: "#contato" },
   { label: "NAVI BI", to: "http://navibi.ai", external: true },
 ];
@@ -151,8 +151,8 @@ const Header = () => {
           <img 
             src={logoTurbineduca} 
             alt="logo-turbineduca" 
-            width={116} 
-            height={82} 
+            width={166} 
+            height={117} 
             className="cursor-pointer"
             fetchPriority="high"
             decoding="async"

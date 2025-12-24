@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // Link fornecido com número e mensagem pré-preenchida
 const WHATSAPP_LINK =
-  "https://wa.me/5532984678715?text=Ola%2C%20estou%20entrando%20em%20contato%20pelo%20site%20do%20Navi%20BI.%20Gostaria%20de%20agendar%20uma%20demonstração%20e%20saber%20mais%20sobre%20planos%20e%20preços.%20Obrigado%21";
+  "https://wa.me/5532984678715?text=Olá%2C%20estou%20entrando%20em%20contato%20pelo%20site%20do%20Turbineduca.%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria%20.%20Obrigado%21";
 
 const WhatsAppButton: React.FC = () => {
   const [mounted, setMounted] = useState(false);

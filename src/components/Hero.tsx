@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroBg from "@/assets/hero-bg.webp";
+import heroBg from "@/assets/foguete.jpeg";
 import naviLogo from "@/assets/logo_navi_vetorizada_branca_bi_260x120.svg";
 import { motion } from "framer-motion";
 import { useParallax } from "@/hooks/useScrollAnimation";
@@ -9,7 +9,7 @@ const Hero = () => {
   const offsetY = useParallax();
 
   return (
-  <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-section">
+  <section className="relative flex items-center justify-center overflow-hidden hero-section lg:min-h-[140vh] xl:min-h-[196vh]" style={{ minHeight: '140vh' }}>
       {/* Background Image with Overlay - Otimizado para Mobile */}
       <motion.div 
         className="absolute inset-0 bg-cover bg-center"
@@ -48,9 +48,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <span className="text-foreground">A Consultoria Disruptiva</span>
+          <span className="text-foreground">A Consultoria</span>
           <br />
-          <span className="text-gradient-gold">Ágil</span>
+          <span className="text-gradient-gold">de Negócios Ágil</span>
         </motion.h1>
 
         <motion.p 
@@ -59,7 +59,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          Nosso propósito é Escalar Pessoas e Negócios.
+          Nosso propósito é Escalar Pessoas e Negócios
         </motion.p>
 
         <motion.div 
@@ -68,7 +68,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <Button
+          {/* <Button
             size="lg"
             className="bg-gold hover:bg-gold-dark text-black-soft font-semibold px-8 py-6 text-lg rounded-xl shadow-gold hover:shadow-elevated transition-all duration-300 hover:scale-105 animate-glow group"
             onClick={() => {
@@ -78,7 +78,7 @@ const Hero = () => {
           >
             Ver Demonstração
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </Button> */}
           
             <Button 
             variant="outline" 
@@ -89,7 +89,7 @@ const Hero = () => {
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
             >
-            Solicitar Acesso Exclusivo
+            Conhecer
             </Button>
         </motion.div>
 
@@ -101,10 +101,10 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.9 }}
         >
           {[
-            { value: "+15", label: "Empresas Transformadas" },
-            { value: "+15 Anos", label: "De Expêriencia em BI" },
-            { value: "+ 150", label: "Dashboards Entregues" },
-            { value: "+400 horas", label: "Economizadas em Relatórios Manuais" },
+            { value: "+40", label: "Projetos" },
+            { value: "+50", label: "Clientes" },
+            { value: "+10 Anos", label: "Experiência em Liderança" },
+            { value: "+5000 horas", label: "Consultoria" },
           ].map((stat, i) => (
             <div key={i} className="p-6 rounded-xl flex flex-col justify-center h-full bg-slate-dark/50">
               <div className="text-2xl md:text-3xl font-bold text-gradient-gold mb-2">

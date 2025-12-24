@@ -48,7 +48,7 @@ const PoliticaDeCookies = () => {
               Política de Cookies
             </h1>
             <p className="text-lg text-white mb-8">
-              Entenda como utilizamos cookies e outras tecnologias para melhorar sua experiência
+              Entenda como o Turbineduca utiliza cookies e outras tecnologias para melhorar sua experiência
               em nosso site.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
@@ -368,15 +368,15 @@ const PoliticaDeCookies = () => {
                 Entre em Contato
               </h2>
               <p className="text-foreground/90 leading-relaxed mb-6">
-                Se você tiver dúvidas sobre esta Política de Cookies ou sobre como usamos cookies, 
+                Se você tiver dúvidas sobre esta Política de Cookies ou sobre como o Turbineduca usa cookies, 
                 entre em contato conosco:
               </p>
               <Card className="border-gold/30 bg-gold/5">
                 <CardContent className="pt-6">
                   <div className="space-y-2 text-foreground/90">
-                    <p><strong>Email:</strong> contato@suaempresa.com.br</p>
-                    <p><strong>WhatsApp:</strong> (XX) XXXXX-XXXX</p>
-                    <p><strong>Endereço:</strong> Sua Cidade - UF</p>
+                    <p><strong>Email:</strong> contato@turbineduca.com.br</p>
+                    <p><strong>WhatsApp:</strong> (32) 98853-9406</p>
+                    <p><strong>Endereço:</strong> Juiz de Fora - MG</p>
                   </div>
                 </CardContent>
               </Card>

@@ -17,23 +17,23 @@ const Differentials = () => {
   const differentials = [
     {
       icon: Star,
-      title: "Mais do que números — clareza para crescer",
-      description: "Com dashboards inteligentes e consultoria especializada, ajudamos sua empresa a enxergar o que realmente importa."
+      title: "Atendimento premium",
+      description: ""
     },
     {
       icon: Award,
-      title: "Foco no Estratégico",
-      description: "Pare de fazer relatórios manuais e tenha tempo para focar em analisar e tomar decisões lucrativas."
+      title: "Inovação constante",
+      description: ""
     },
     {
       icon: Zap,
-      title: "Evolução Contínua",
-      description: "Receba constantemente novos dashboards e relatórios  com algoritmos de análise financeira."
+      title: "Metodo exa business",
+      description: ""
     },
     {
       icon: Check,
-      title: "Expertise Financeira",
-      description: "Tenha acesso as análises financeiras criadas por especialistas."
+      title: "Ecossistema de Soluções",
+      description: ""
     }
   ];
 
@@ -71,7 +71,7 @@ const Differentials = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-poppins font-bold mb-4">
-            Por que escolher o <span className="text-gradient-gold">Navi BI?</span>
+            Por que escolher o <span className="text-gradient-gold">Turbineduca?</span>
           </h2>
           <p className="text-white/90 text-base sm:text-lg max-w-2xl mx-auto">
             Diferenciais que fazem a diferença no seu negócio.
@@ -117,7 +117,7 @@ const Differentials = () => {
         >
           <div className="inline-block glass-effect px-8 py-4 rounded-full border border-gold/30">
             <p className="text-gold font-semibold">
-              ✨ Você não precisa mais decidir no escuro — experimente o Navi BI hoje! ✨
+              ✨ Transforme desempenho em lucro com nossa consultoria disruptiva que une agilidade, estratégia e inovação. ✨
             </p>
           </div>
         </motion.div>

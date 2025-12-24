@@ -65,12 +65,12 @@ const Footer = () => {
               <img
                 src={logoTurbineduca}
                 alt="Turbineduca Logo"
-                className="w-32 h-auto"
+                className="w-38 h-auto"
                 style={{ objectFit: "contain" }}
               />
             </div>
             <p className="text-[#C4D7E0] leading-relaxed max-w-md">
-              A plataforma Navi BI revela a inteligência por trás dos dados.
+              Mentoria para Executivos e Empreendedores Focada em Agilidade de Negócios.
             </p>
             
             {/* Social Links */}
@@ -207,7 +207,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-gold/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#C4D7E0] text-sm text-center md:text-left">
-              © {currentYear} Navi BI — Revelando o caminho da prosperidade
+              © {currentYear} Turbineduca - Transformando sua gestão empresarial.
             </p>
             <p className="text-[#C4D7E0] text-sm">
               Desenvolvido com o propósito de transformar negócios

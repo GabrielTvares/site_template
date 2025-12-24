@@ -12,7 +12,7 @@ import logoJllNetwork from "@/assets/logo-jllnetwork.png";
 import logoNeobits from "@/assets/logo-neobits.png";
 import logoNual from "@/assets/logo-nual.png";
 import logoSlTech from "@/assets/logo-sltech.png";
-import fotoVinicius from "@/assets/vinicius.webp";
+import fotoRene from "@/assets/rene.avif";
 import fotoRodolfo from "@/assets/rodolfo.avif";
 import fotoBrianezzi from "@/assets/brianezzi.jpeg";
 
@@ -40,12 +40,12 @@ const testimonials: Testimonial[] = [
     image: fotoRodolfo,
   },
   {
-    name: "Vinicius",
+    name: "Rene Silva",
     role: "CEO",
-    company: "SITS Tecnologia",
-    content: "A mentoria Executive ExA me abriu os olhos para vários vícios de trabalho que não eram produtivos e me acorrentavam ao chão, impedindo o meu crescimento. Percebi que meu time não estava 100% alinhado comigo e com a empresa, e a mentoria me deu ferramentas para melhorar e transformar meu time em uma equipe mais produtiva e parceira.",
+    company: "ava Growth",
+    content: "Minha empresa nasceu seguindo os pilares da mentoria ExA, apesar de muito recente vejo um futuro promissor seguindo esses conceitos, a Ava Growth está nascendo com pensamentos e atitudes de empresas gigantescas graças a todo conhecimento e conteúdo prático adquirido na mentoria com o Maycon Pires.",
     rating: 5,
-    image: fotoVinicius,
+    image: fotoRene,
   },
   {
     name: "André Brianezi",

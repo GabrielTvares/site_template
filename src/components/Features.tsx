@@ -8,33 +8,33 @@ const Features = () => {
   const features = [
     {
       icon: BarChart3,
-      title: "Dashboards Interativos",
-      description: "Visualize KPIs e métricas em tempo real com gráficos dinâmicos e personalizáveis."
+      title: "Planejamento Estratégico",
+      description: ""
     },
     {
       icon: TrendingUp,
-      title: "Relatórios Inteligentes",
-      description: "Entenda seus resultados como nunca antes com análise completa e do seu financeiro e impostos."
+      title: "Metas OKR",
+      description: ""
     },
     {
       icon: Database,
-      title: "Integração com ERPs",
-      description: "Conecte seus dados em segundos com integração nativa aos principais sistemas."
+      title: "Gestão Cultural",
+      description: ""
     },
     {
       icon: Clock,
-      title: "Análise Ágil dos Dados",
-      description: "Acompanhe suas métricas financeiras com atualizações automáticas."
+      title: "Business Partner",
+      description: ""
     },
     {
       icon: CircleDollarSign,
-      title: "Plano Orçamentário",
-      description: "Controle o budget de todas as suas receitas e despesas."
+      title: "Mentora executiva",
+      description: ""
     },
     {
       icon: Shield,
-      title: "Perfis e Acessos Personalizados",
-      description: "Cada colaborador visualiza apenas o que importa para sua área."
+      title: "Avaliação Comportalment DISC",
+      description: ""
     }
   ];
 
@@ -75,10 +75,10 @@ const Features = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-poppins font-bold mb-4">
-            <span className="text-gradient-gold">Funcionalidades</span>
+            <span className="text-gradient-gold">Transformações que realizamos:</span>
           </h2>
           <p className="text-white/90 text-base sm:text-lg max-w-2xl mx-auto">
-            Ferramentas poderosas para transformar dados em insights acionáveis.
+            Veja abaixo as áreas que transformamos os negócios.
           </p>
         </motion.div>
 

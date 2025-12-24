@@ -73,10 +73,10 @@ const PoliticaDePrivacidade = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-white">
                 <p>
-                  O <strong className="text-foreground">Navi BI</strong>, plataforma de Business Intelligence que transforma dados em decisões estratégicas, está comprometido em proteger a privacidade e os dados pessoais de todos os nossos usuários, clientes e visitantes do site.
+                  O <strong className="text-foreground">Turbineduca</strong>, consultoria premium especializada em educação corporativa, mentoria executiva e desenvolvimento de lideranças, está comprometido em proteger a privacidade e os dados pessoais de todos os nossos clientes, participantes e visitantes do site.
                 </p>
                 <p>
-                  Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais ao utilizar nossa plataforma de análise de dados, dashboards interativos, relatórios financeiros automatizados e demais serviços.
+                  Esta Política de Privacidade descreve como o Turbineduca coleta, usa, armazena e protege suas informações pessoais ao utilizar nossos serviços de consultoria educacional, programas de mentoria, treinamentos corporativos e demais soluções.
                 </p>
                 <p>
                   Esta política está em conformidade com a <strong className="text-foreground">Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong>, o <strong className="text-foreground">Marco Civil da Internet (Lei nº 12.965/2014)</strong> e o <strong className="text-foreground">Código de Defesa do Consumidor (Lei nº 8.078/1990)</strong>.
@@ -101,11 +101,11 @@ const PoliticaDePrivacidade = () => {
                   <div>
                     <h4 className="font-semibold text-white mb-2">2.1. Dados Fornecidos Voluntariamente</h4>
                     <ul className="list-disc list-inside space-y-2 text-white ml-4">
-                      <li><strong>Dados de identificação:</strong> nome completo, sexo, CPF, e-mail, telefone, WhatsApp.</li>
-                      <li><strong>Dados empresariais:</strong> nome da empresa, cargo, CNPJ, setor de atuação, endereço, sócios.</li>
-                      <li><strong>Dados de comunicação:</strong> mensagens enviadas através de formulários de contato, WhatsApp ou e-mail.</li>
-                      <li><strong>Dados de demonstração:</strong> informações fornecidas durante solicitações de demo da plataforma Navi BI.</li>
-                      <li><strong>Dados de uso da plataforma:</strong> informações sobre dashboards acessados, relatórios gerados e preferências de análise (quando aplicável).</li>
+                      <li><strong>Dados de identificação:</strong> nome completo, e-mail, telefone, WhatsApp, cargo, área de atuação.</li>
+                      <li><strong>Dados empresariais:</strong> nome da empresa, CNPJ, setor de atuação, porte da organização, número de colaboradores.</li>
+                      <li><strong>Dados de comunicação:</strong> mensagens enviadas através de formulários de contato, WhatsApp, e-mail ou plataforma EAD.</li>
+                      <li><strong>Dados de participação:</strong> informações fornecidas durante programas de consultoria, mentoria executiva e treinamentos.</li>
+                      <li><strong>Dados educacionais:</strong> histórico de cursos, certificações, avaliações de desempenho e progresso nos programas do Turbineduca.</li>
                     </ul>
                   </div>
 
@@ -117,8 +117,8 @@ const PoliticaDePrivacidade = () => {
                       <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, páginas visitadas, URL de origem.</li>
                       <li><strong>Dados de dispositivo:</strong> sistema operacional, resolução de tela, idioma, tipo de dispositivo (desktop/mobile).</li>
                       <li><strong>Cookies e tecnologias similares:</strong> conforme descrito em nossa <Link to="/politica-de-cookies" className="text-gold hover:underline">Política de Cookies</Link>.</li>
-                      <li><strong>Dados de interação:</strong> cliques em elementos, tempo de permanência, scroll, seções visitadas.</li>
-                      <li><strong>Dados de desempenho:</strong> velocidade de carregamento, erros técnicos, performance da plataforma.</li>
+                      <li><strong>Dados de interação:</strong> cliques em elementos, tempo de permanência, páginas acessadas na plataforma EAD.</li>
+                      <li><strong>Dados de desempenho:</strong> velocidade de carregamento, erros técnicos, performance dos sistemas.</li>
                     </ul>
                   </div>
                 </div>
@@ -136,16 +136,16 @@ const PoliticaDePrivacidade = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 text-white">
-                  <p>Utilizamos seus dados pessoais para as seguintes finalidades:</p>
+                  <p>O Turbineduca utiliza seus dados pessoais para as seguintes finalidades:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Prestação de serviços de BI:</strong> fornecer acesso à plataforma Navi BI, dashboards interativos, relatórios financeiros (DRE), análises de dados, funcionalidades de Business Intelligence e demais relatórios.</li>
-                    <li><strong>Comunicação:</strong> responder suas solicitações via e-mail ou WhatsApp, enviar confirmações de demonstrações agendadas e prestar suporte técnico.</li>
-                    <li><strong>Marketing (com consentimento):</strong> enviar newsletters, mensagens via Whatsapp e SMS sobre funcionalidades da plataforma, novidades em análise de dados, cases de sucesso e ofertas personalizadas.</li>
-                    <li><strong>Análise e melhoria:</strong> entender como você usa nosso site e plataforma para melhorar a experiência do usuário, desenvolver novas funcionalidades de BI e otimizar dashboards.</li>
-                    <li><strong>Segurança e integridade:</strong> proteger contra fraudes, acessos não autorizados, atividades maliciosas e garantir a segurança dos dados armazenados na plataforma.</li>
-                    <li><strong>Cumprimento legal:</strong> atender obrigações legais, regulatórias, fiscais e trabalhistas, incluindo emissão de notas fiscais e contratos.</li>
-                    <li><strong>Suporte técnico especializado:</strong> resolver problemas técnicos relacionados a dashboards, relatórios, integrações de dados e prestar assistência personalizada.</li>
-                    <li><strong>Personalização:</strong> adaptar a experiência na plataforma conforme suas preferências e necessidades de análise de dados.</li>
+                    <li><strong>Prestação de serviços educacionais:</strong> fornecer acesso a programas de consultoria, mentoria executiva, treinamentos corporativos e plataforma EAD.</li>
+                    <li><strong>Comunicação:</strong> responder suas solicitações via e-mail ou WhatsApp, enviar confirmações de agendamentos e prestar suporte.</li>
+                    <li><strong>Marketing (com consentimento):</strong> enviar newsletters, mensagens via WhatsApp e SMS sobre novos programas, eventos, webinars e ofertas personalizadas.</li>
+                    <li><strong>Análise e melhoria:</strong> entender como você usa nossos serviços para melhorar a experiência educacional, desenvolver novos programas e otimizar metodologias.</li>
+                    <li><strong>Segurança e integridade:</strong> proteger contra fraudes, acessos não autorizados e garantir a segurança dos dados armazenados.</li>
+                    <li><strong>Cumprimento legal:</strong> atender obrigações legais, regulatórias e fiscais, incluindo emissão de notas fiscais e contratos.</li>
+                    <li><strong>Suporte técnico:</strong> resolver problemas relacionados à plataforma EAD, webinars e prestar assistência personalizada.</li>
+                    <li><strong>Personalização:</strong> adaptar a experiência nos programas conforme suas preferências e necessidades de desenvolvimento.</li>
                   </ul>
                 </div>
               </CardContent>
@@ -185,14 +185,14 @@ const PoliticaDePrivacidade = () => {
                 <div className="space-y-4 text-white">
                   <p>Seus dados pessoais podem ser compartilhados nas seguintes situações:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Prestadores de serviços tecnológicos:</strong> Google Cloud para hospedagem do site, provedores de e-mail, serviços de análise de dados e ferramentas de comunicação como WhatsApp Business.</li>
-                    <li><strong>Ferramentas de Business Intelligence:</strong> quando necessário para integração com outras plataformas de análise (com seu consentimento).</li>
-                    <li><strong>Parceiros comerciais:</strong> somente com seu consentimento prévio e explícito.</li>
+                    <li><strong>Prestadores de serviços tecnológicos:</strong> Google Cloud para hospedagem, provedores de e-mail, plataforma EAD e ferramentas de comunicação como WhatsApp Business.</li>
+                    <li><strong>Ferramentas educacionais:</strong> quando necessário para integração com outras plataformas de ensino e gestão (com seu consentimento).</li>
+                    <li><strong>Parceiros educacionais:</strong> instituições parceiras e facilitadores, somente com seu consentimento prévio e explícito.</li>
                     <li><strong>Autoridades legais:</strong> quando exigido por lei, ordem judicial, requisição de órgãos governamentais ou ANPD (Autoridade Nacional de Proteção de Dados).</li>
-                    <li><strong>Proteção de direitos:</strong> para proteger nossos direitos, segurança, propriedade intelectual e prevenir fraudes.</li>
+                    <li><strong>Proteção de direitos:</strong> para proteger os direitos do Turbineduca, segurança, propriedade intelectual e prevenir fraudes.</li>
                   </ul>
                   <p className="mt-4">
-                    <strong>Garantia Importante:</strong> Não vendemos, alugamos ou comercializamos seus dados pessoais para terceiros. Todos os dados compartilhados com prestadores de serviços são protegidos por contratos de confidencialidade e acordos de processamento de dados conforme a LGPD.
+                    <strong>Garantia Importante:</strong> O Turbineduca não vende, aluga ou comercializa seus dados pessoais para terceiros. Todos os dados compartilhados com prestadores de serviços são protegidos por contratos de confidencialidade e acordos de processamento de dados conforme a LGPD.
                   </p>
                 </div>
               </CardContent>
@@ -208,11 +208,10 @@ const PoliticaDePrivacidade = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 text-white">
-                  <p>Implementamos medidas técnicas e organizacionais robustas para proteger seus dados pessoais:</p>
+                  <p>O Turbineduca implementa medidas técnicas e organizacionais robustas para proteger seus dados pessoais:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Criptografia SSL/TLS:</strong> todo tráfego de dados entre seu navegador e nossos servidores é criptografado usando protocolo HTTPS.</li>
                     <li><strong>Google Cloud Security:</strong> hospedagem em infraestrutura Google Cloud com certificações ISO 27001, SOC 2 e conformidade LGPD.</li>
-                    {/* <li><strong>Controle de acesso rigoroso:</strong> autenticação multifator, permissões baseadas em funções e logs de acesso.</li> */}
                     <li><strong>Controle de acesso:</strong> permissões baseadas em funções e logs de acesso.</li>
                     <li><strong>Monitoramento 24/7:</strong> sistemas automatizados de detecção de ameaças, vulnerabilidades e tentativas de invasão.</li>
                     <li><strong>Backups regulares:</strong> cópias de segurança automáticas e distribuídas geograficamente para recuperação de dados.</li>
@@ -234,7 +233,7 @@ const PoliticaDePrivacidade = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 text-white">
-                  <p>Mantemos seus dados pessoais apenas pelo tempo necessário para:</p>
+                  <p>O Turbineduca mantém seus dados pessoais apenas pelo tempo necessário para:</p>
                   <ul className="list-disc list-inside space-y-2 ml-4">
                     <li>Cumprir as finalidades para as quais foram coletados.</li>
                     <li>Atender obrigações legais e regulatórias.</li>
@@ -307,7 +306,7 @@ const PoliticaDePrivacidade = () => {
               <CardContent>
                 <div className="space-y-4 text-white">
                   <p>
-                    Utilizamos cookies e tecnologias similares para melhorar sua experiência em nosso site e plataforma. Para informações detalhadas sobre como usamos cookies, consulte nossa <Link to="/politica-de-cookies" className="text-gold hover:underline font-semibold">Política de Cookies</Link>.
+                    O Turbineduca utiliza cookies e tecnologias similares para melhorar sua experiência em nosso site e plataforma EAD. Para informações detalhadas sobre como usamos cookies, consulte nossa <Link to="/politica-de-cookies" className="text-gold hover:underline font-semibold">Política de Cookies</Link>.
                   </p>
                   <p>
                     Você pode gerenciar suas preferências de cookies a qualquer momento através do banner de consentimento ou das configurações do seu navegador.
@@ -327,13 +326,13 @@ const PoliticaDePrivacidade = () => {
               <CardContent>
                 <div className="space-y-4 text-white">
                   <p>
-                    Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas ou por outros motivos operacionais, legais ou regulatórios.
+                    O Turbineduca pode atualizar esta Política de Privacidade periodicamente para refletir mudanças em suas práticas ou por outros motivos operacionais, legais ou regulatórios.
                   </p>
                   <p>
                     Quando fizermos alterações significativas, notificaremos você por e-mail (se fornecido) ou através de um aviso destacado em nosso site antes da alteração entrar em vigor.
                   </p>
                   <p>
-                    Recomendamos que você revise esta política regularmente para se manter informado sobre como protegemos seus dados.
+                    Recomendamos que você revise esta política regularmente para se manter informado sobre como o Turbineduca protege seus dados.
                   </p>
                 </div>
               </CardContent>
@@ -350,7 +349,7 @@ const PoliticaDePrivacidade = () => {
               <CardContent>
                 <div className="space-y-6 text-white">
                   <p>
-                    Para exercer seus direitos, esclarecer dúvidas ou fazer solicitações relacionadas a esta Política de Privacidade, entre em contato conosco:
+                    Para exercer seus direitos, esclarecer dúvidas ou fazer solicitações relacionadas a esta Política de Privacidade do Turbineduca, entre em contato conosco:
                   </p>
                   
                   <div className="grid md:grid-cols-2 gap-6">
@@ -358,8 +357,8 @@ const PoliticaDePrivacidade = () => {
                       <Mail className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-white">E-mail</p>
-                        <a href="mailto:contato@suaempresa.com.br" className="text-gold hover:underline">
-                          contato@suaempresa.com.br
+                        <a href="mailto:contato@turbineduca.com.br" className="text-gold hover:underline">
+                          contato@turbineduca.com.br
                         </a>
                       </div>
                     </div>
@@ -368,13 +367,9 @@ const PoliticaDePrivacidade = () => {
                       <Phone className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-white">WhatsApp / Telefone</p>
-                        {/* <a href="https://wa.me/5532988539406" className="text-gold hover:underline">
+                        <a href="https://wa.me/5532988539406" className="text-gold hover:underline">
                           (32) 98853-9406
                         </a>
-                        <br />
-                        <a href="tel:+553287091291" className="text-gold hover:underline">
-                          (32) 98709-1291
-                        </a> */}
                       </div>
                     </div>
                     
@@ -390,14 +385,14 @@ const PoliticaDePrivacidade = () => {
                       <Shield className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-white">Encarregado de Dados (DPO)</p>
-                        <p>Maycon Pires</p>
+                        <p>Gabriel Tavares</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-6 p-4 bg-slate-light/10 rounded-lg border border-gold/10">
                     <p className="text-sm">
-                      <strong className="text-white">Tempo de Resposta:</strong> Responderemos suas solicitações em até 15 dias úteis, conforme estabelecido pela LGPD.
+                      <strong className="text-white">Tempo de Resposta:</strong> O Turbineduca responderá suas solicitações em até 15 dias úteis, conforme estabelecido pela LGPD.
                     </p>
                   </div>
                 </div>
@@ -430,7 +425,7 @@ const PoliticaDePrivacidade = () => {
                 Tem dúvidas sobre privacidade?
               </h3>
               <p className="text-white/80 mb-6">
-                Nossa equipe está pronta para esclarecer qualquer questão sobre como tratamos seus dados.
+                A equipe do Turbineduca está pronta para esclarecer qualquer questão sobre como tratamos seus dados.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Link to="/#contato">
